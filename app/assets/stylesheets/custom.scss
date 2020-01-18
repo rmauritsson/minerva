@@ -1,18 +1,21 @@
 @import 'bootstrap/dist/css/bootstrap';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Muli:300&display=swap);
 body {
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: 'Muli', 'sans-serif';
 }
 .minerva{
   background:#fec400;
   border-color: #fec400;
-  margin: 0 10px;
+}
+.body-content{
+  padding: 0;
+  margin: 0;
+}
+.btn{
+  margin: 10px 10px;
 }
 .navbar{
   background:#222222;
-}
-.navbar-nav li{
-  padding-left: 30px;
 }
 .nav-item::after{
   content:'';display:block;
@@ -38,4 +41,13 @@ body {
 }
 .dropdown-item:focus, .dropdown-item:hover{
   background:#fec400;
+}
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
