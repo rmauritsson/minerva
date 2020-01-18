@@ -1,0 +1,29 @@
+@import 'bootstrap/dist/css/bootstrap';
+html {
+    background: #fafafa;
+    font-family:  Roboto, sans-serif;
+}
+
+nav {
+    overflow: hidden;
+    background: #333333;
+    color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+}
+
+.body-content{
+  padding-top: 80px;
+}
+
+nav li a {
+    display: block;
+    font-size: 14px;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+#navbarNav ul li{
+  padding: 0 20px;
+}
