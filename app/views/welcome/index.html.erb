@@ -1,10 +1,10 @@
-<section class="jumbotron text-center">
+<section class="jumbotron jumbotron-home text-center">
   <div class="container">
     <h2 class="white bold">The African Investment Network</h2>
     <p class="lead white">Where great businesses and great people meet. We bring together businesses looking for investment and investors with the capital, contacts and knowledge to help them succeed.</p>
     <p>
-      <%= link_to 'Fundraise', "#", class: "btn btn-outline-light minerva" %>
-      <%= link_to 'Invest', "#", class: "btn btn-secondary" %>
+      <%= link_to 'Fundraise', "#", class: "btn-btn btn-outline-light minerva" %>
+      <%= link_to 'Invest', "#", class: "btn-btn btn-secondary" %>
     </p>
   </div>
 </section>
@@ -75,14 +75,10 @@
     <h3>Popular Categories</h3>
     <div class="row mb-2">
       <div class="col-md-6">
-        <% @categories.find_each(start: 1, finish: 3) do |category| %>
-          <%= render category %>
-        <% end %>
+
       </div>
       <div class="col-md-6">
-        <% @categories.find_each(start: 4, finish: 6) do |category| %>
-          <%= render category %>
-        <% end %>
+
       </div>
     </div>
   </div>

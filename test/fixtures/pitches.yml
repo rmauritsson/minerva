@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  location: MyText
+  stage: MyString
+  investor-role: MyString
+  summary: MyText
+  description: MyText
+  objectives: MyText
+  target: MyString
+  min-per-investor: MyString
+
+two:
+  title: MyString
+  location: MyText
+  stage: MyString
+  investor-role: MyString
+  summary: MyText
+  description: MyText
+  objectives: MyText
+  target: MyString
+  min-per-investor: MyString

@@ -37,13 +37,15 @@
       <% else %>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <%= link_to 'Home', root_path, class: "nav-link nav-item active" %>
+            <%= link_to 'Home', root_path, class: "nav-link active" %>
           </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navdrop" role="button" data-toggle="dropdown" data-hover="dropdown">How it Works</a>
               <div class="dropdown-menu" aria-labelledby="navdrop">
-                  <%= link_to 'Getting Started as an Investor', '#', class: "dropdown-item" %>
-                  <%= link_to 'Getting Started as an Entrepreneur', '#', class: "dropdown-item" %>
+                  <%= link_to 'Getting Started', '/welcome/entrepreneur', class: "dropdown-item" %>
+                  <%= link_to 'Our Pricing', '#', class: "dropdown-item" %>
+                  <%= link_to 'Blog', '#', class: "dropdown-item" %>
+                  <%= link_to 'FAQs', '#', class: "dropdown-item" %>
               </div>
           </li>
           <li class="nav-item dropdown">

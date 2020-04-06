@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CategoryTest < ActiveSupport::TestCase
+class PitchTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

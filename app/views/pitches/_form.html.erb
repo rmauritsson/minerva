@@ -1,0 +1,41 @@
+<%= form_for @pitch do |p| %>
+
+  <div class="field">
+    <%= p.label :title %><br />
+    <%= p.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= p.label :location %><br />
+    <%= p.text_field :location%>
+  </div>
+
+  <div class="field">
+    <%= p.label :stage %><br />
+    <%= p.text_field :stage%>
+  </div>
+
+  <div class="field">
+    <%= p.label :summary %><br />
+    <%= p.text_field :summary %>
+  </div>
+
+  <div class="field">
+    <%= p.label :description %><br />
+    <%= p.text_field :description%>
+  </div>
+
+  <div class="field">
+    <%= p.label :objectives %><br />
+    <%= p.text_field :objectives%>
+  </div>
+
+  <div class="field">
+    <%= p.label :target %><br />
+    <%= p.text_field :target%>
+  </div>
+
+  <div class="actions">
+    <%= p.submit "Create Pitch" %>
+  </div>
+<% end %>
