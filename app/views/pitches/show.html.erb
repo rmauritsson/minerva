@@ -2,9 +2,9 @@
 <p>Find me in app/views/pitches/show.html.erb</p>
 
 <h2><%= @pitch.title %></h2>
-<p><%= @pitch.summary %></p>
+<h4><%= @pitch.summary %></h4>
 <p><%= @pitch.description %></p>
 
 <%= link_to 'Edit', edit_pitch_path(@pitch.id) %>
 <%= link_to 'Delete', pitch_path(@pitch.id), method: :delete %>
-<%= link_to 'Back', pitch_path %>
+<%= link_to 'Back', pitches_path %>

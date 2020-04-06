@@ -1,2 +1,8 @@
 <h1>Pitches#index</h1>
 <p>Find me in app/views/pitches/index.html.erb</p>
+
+<%= @pitches.each do |pitch|%>
+  <%= link_to pitch.title,  pitch_path(pitch.id)%>
+<% end %>
+
+<%= link_to 'Create Pitch', new_pitch_path %>

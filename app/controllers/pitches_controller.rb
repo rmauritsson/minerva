@@ -1,5 +1,6 @@
 class PitchesController < ApplicationController
   def index
+    @pitches = Pitch.all
   end
 
   def show
@@ -33,6 +34,7 @@ class PitchesController < ApplicationController
       render :edit
     end
   end
+  
   def destroy
     @pitch = Pitch.find(params[:id])
 
