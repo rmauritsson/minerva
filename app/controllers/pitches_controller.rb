@@ -21,6 +21,23 @@ class PitchesController < ApplicationController
   end
 
   def edit
+    @pitch = Pitch.find(params[:id])
+  end
+
+  def update
+    @pitch = Pitch.find(params[:id])
+
+    if @pitch.update(pitch_params)
+      redirect_to @pitch
+    else
+      render :edit
+    end
+  end
+  def destroy
+    @pitch = Pitch.find(params[:id])
+
+    @pitch.destroy
+    redirect_to :action => :index
   end
 
   private
