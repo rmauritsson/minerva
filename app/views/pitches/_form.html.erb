@@ -6,6 +6,11 @@
   </div>
 
   <div class="field">
+    <%= p.label :category %><br />
+    <%= p.select :category_id, Category.all.map{|c| [c.category, c.id]} %>
+  </div>
+
+  <div class="field">
     <%= p.label :location %><br />
     <%= p.text_field :location%>
   </div>

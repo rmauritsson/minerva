@@ -1,6 +1,7 @@
 class PitchesController < ApplicationController
   def index
     @pitches = Pitch.all
+
   end
 
   def show
@@ -34,7 +35,7 @@ class PitchesController < ApplicationController
       render :edit
     end
   end
-  
+
   def destroy
     @pitch = Pitch.find(params[:id])
 
@@ -45,6 +46,6 @@ class PitchesController < ApplicationController
   private
 
   def pitch_params
-    params.require(:pitch).permit(:title, :location, :stage, :summary, :description, :objectives, :target);
+    params.require(:pitch).permit(:title, :category_id, :location, :stage, :summary, :description, :objectives, :target);
   end
 end

@@ -10,7 +10,12 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
+
+    <% unless current_page?(new_user_session_path) %>
+    <%= render 'shared/navbar'  %>
+    <% end %>
+
+
     <main role="main">
       <% if notice %>
         <p class="alert alert-success"><%= notice %></p>
@@ -18,8 +23,14 @@
       <% if alert %>
         <p class="alert alert-danger"><%= alert %></p>
       <% end %>
+
       <%= yield %>
-      <%= render 'shared/footer' %>
+
     </main>
+
+    <% unless current_page?(new_user_session_path) %>
+    <%= render 'shared/footer'  %>
+    <% end %>
+
   </body>
 </html>
